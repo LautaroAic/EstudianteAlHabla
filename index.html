@@ -3,19 +3,22 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>EstudianteAlHabla</title>
     <link rel="stylesheet" type="text/css"href="style.css">
 </head>
 <style>
-    body
-    {
-        background: url(IMG/FondoIndex.jpg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    
+body
+{
+    background: url(IMG/FondoIndex.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1{
+    -webkit-text-stroke: 2px black;
+    text-shadow: 5px 5px black;
+}
 </style>
 
 <body>
@@ -23,7 +26,8 @@
     
     <header>
         
-        <a href="#" class="logo">EstudianteAlHabla</a>
+        <a href="#" class="logo"><img src="IMG/Logo.png" height="100vh" width="150vh" 
+            style="background-color: #fff; border-radius: 30%;"></a>
         <nav>
             <ul>
                 <li><a href="#">Materias</a></li>
@@ -39,24 +43,73 @@
         
     <section class="zona1"></section>
 
-<!-- Scroll -->
+<!-- Scroll MateriasPrincipales-->
 
-    <div class="container" style="position: left;" >
+    <div class="container" style="top: 40%; " >
         <img class="control prev" src="IMG/prev.png" alt="">
         <div class="slider" >
-            <li><a href=""><img src="IMG/materias/Matemática.jpg"></a></li>
-            <li><a href=""><img src="IMG/materias/lenguayliteratura.webp" alt=""></a></li>
-            <li><a href=""><img src="IMG/materias/ingles.jpg" alt="" ></a></li>
+            <li><a href="Matematicas/Matematica.html"><center><h1 style="margin-left: 175px;">M<br>A<br> T<br> E <br> M<br> A<br> T<br> I <br> C<br> A<br> S </h1></center></a></li>
+            <li><a href="Matematicas/Matematica.html"><img src="IMG/materias/Matemática.jpg" style="z-index: 9;"></a></li>
+            <li><a href="Matematicas/Matematica.html"><center><h1>M<br>A<br> T<br> E <br> M<br> A<br> T<br> I <br> C<br> A<br> S </h1></center></a></li>
+
+            <li><a href="LyL/Lengua.html"><center><h1 style="margin-left: 200px;"><br><br><br><br> L<br>y<br>L<br></h1></center></a></li>
+            <li><a href="LyL/Lengua.html"><img src="IMG/materias/lenguayliteratura.webp" ></a></li>
+            <li><a href="LyL/Lengua.html"><center><h1><br><br><br><br>L<br>y<br>L</h1></center></a></li>
+            
+            <li><a href="Ingles/Ingles.html"><center><h1 style="margin-left: 200px;"><br><br>I<br>N<br>G<br>L<br>E<br>S</h1></center></a></li>
+            <li><a href="Ingles/Ingles.html"><img src="IMG/materias/ingles.jpg" alt="" ></a></li>
+            <li><a href="Ingles/Ingles.html"><center><h1><br><br>I<br>N<br>G<br>L<br>E<br>S</h1></center></a></li>
+            
+            <li><a href=""><center><h1 style="margin-left: 200px;"><br><br>F<br>I<br>S<br>I<br>C<br>A</h1></center></a></li>
             <li><a href=""><img src="IMG/materias/fisica.jpg" alt="" ></a></li>
+            <li><a href=""><center><h1 ><br><br>F<br>I<br>S<br>I<br>C<br>A</h1></center></a></li>
+
+            <li><a href=""><center><h1 style="margin-left: 200px;"><br>H<br>I<br>S<br>T<br>O<br>R<br>I<br>A</h1></center></a></li>
             <li><a href=""><img src="IMG/materias/historias.jpg" alt="" ></a></li>
-        </div>
+            <li><a href=""><center><h1><br>H<br>I<br>S<br>T<br>O<br>R<br>I<br>A</h1></center></a></li>
+         </div>
         <img class="control next" src="IMG/next.png" alt="">
     </div>
 
-    <script src="java.js"></script>
-    <section style="color: rebeccapurple;">
+    <div style="position:absolute; top: 25%; z-index: 11; color: #fff; ">
+        <u style="color: rgba(255, 255, 0, 0.411);"><h2 style="color: #fff; font-size: 50px;">Materias más buscadas</h2></u>
+    </div>
+
+<!-- Scroll MateriasPrincipales-->
+
+<div class="container2" style="top: 130%; z-index: 11; " >
+    <img class="control prev2" src="IMG/prev.png" alt="">
+    <div class="slider2" >
+        <li><a href=""><center><h1 style="margin-left: 100px;">P<br>R<br> O<br> G <br> R<br> A<br> M<br> A <br> C<br> I<br> Ó <br>N</h1></center></a></li>
+        <li><a href=""><img src="IMG/materias/programacion.png"></a></li>
+        <li><a href=""><center><h1>P<br>R<br> O<br> G <br> R<br> A<br> M<br> A <br> C<br> I<br> Ó <br>N</h1></center></a></li>
+
+        <li><a href=""><center><h1 style="margin-left: 210px;">A<br>S<br>T<br>R<br>O<br>N<br>O<br>M<br>Í<br>A</h1></center></a></li>
+        <li><a href=""><img src="IMG/materias/astronomia.webp" ></a></li>
+        <li><a href=""><center><h1>A<br>S<br>T<br>R<br>O<br>N<br>O<br>M<br>Í<br>A</h1></center></a></li>
         
-    </section>
+        <li><a href=""><center><h1 style="margin-left: 200px;">R.<br>H<br>U<br>M<br>A<br>N<br>O<br>S</h1></center></a></li>
+        <li><a href=""><img src="IMG/materias/recursosh.jpg" alt="" ></a></li>
+        <li><a href=""><center><h1>R.<br>H<br>U<br>M<br>A<br>N<br>O<br>S</h1></center></a></li>
+        
+        <li><a href=""><center><h1 style="margin-left: 200px;">I<br>N<br>F<br>O<br>R<br>M<br>A<br>T<br>I<br>C<br>A</h1></center></a></li>
+        <li><a href=""><img src="IMG/materias/informatica.jpg" alt="" ></a></li>
+        <li><a href=""><center><h1 >I<br>N<br>F<br>O<br>R<br>M<br>Á<br>T<br>I<br>C<br>A</h1></center></a></li>
+    </div>
+    <img class="control next2" src="IMG/next.png" alt="">
+</div>
+
+<div style="position:absolute; top: 110%; z-index: 11; ">
+    <u style="color: rgba(73, 202, 138, 0.411);"><h2 style="color: rgb(19, 18, 18); font-size: 50px;"> Especialidades</h2></u>
+</div>
+
+
+
+
+
+
+<section class="zona2" style="top: 100%; z-index: 10;"></section>
+<script src="java.js"></script>
 </body>
 
 </html>
