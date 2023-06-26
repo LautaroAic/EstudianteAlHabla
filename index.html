@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <title>EstudianteAlHabla</title>
     <link rel="stylesheet" type="text/css"href="style.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <style>
 body
 {
-    background: url(IMG/FondoIndex.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,30 +20,59 @@ h1{
     -webkit-text-stroke: 2px black;
     text-shadow: 5px 5px black;
 }
+a{
+    text-decoration: none;
+}
 </style>
 
 <body>
 <!-- menu -->
     
     <header>
-        
-        <a href="#" class="logo"><img src="IMG/Logo.png" height="100vh" width="150vh" 
-            style="background-color: #fff; border-radius: 30%; border: solid 3px black;"></a>
+        <div class="logo">
+        <a href="#"><img src="IMG/Logo.png" height="100vh" width="150vh" 
+            style="background-color: #ffffff; border-radius: 30%; border: solid 3px black;"></a>
+        </div>
+        <div class="menu">
         <nav>
             <ul>
-                <li><a href="#">Materias</a></li>
+                <li><a href="Materias/Materia.html">Materias</a></li>
                 <li><center><a href="#">Olimpiadas</a></center></li>
                 <li><a href="#">Como-Estudiar</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Buscador</a></li>
-
+                <li><a href="Perfil/Perfil.html">Perfil</a></li>
             </ul>
+            
         </nav>
-        
+        <div id="ctn-icon-search" style="top: -10%; left: 70%;">
+            <i class="fas fa-search" id="icon-search"></i>
+        </div>
+
+        </div>
+
+    
     </header>
         
-    <section class="zona1"></section>
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+    </div>
 
+    <ul id="box-search" >
+        <li><a href="#"><i class="fas fa-search"></i>HTML</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>CSS</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>JavaScript</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>PHP</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>NODEJS</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>VUEJS</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Como hacer</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Como crear</a></li>
+    </ul>
+
+    <div id="cover-ctn-search"></div>
+
+
+    
+
+    <section class="zona1" style="z-index: 0;"></section>
 <!-- Scroll MateriasPrincipales-->
 
     <div class="container" style="top: 40%; " >
@@ -71,13 +101,17 @@ h1{
         <img class="control next" src="IMG/next.png" alt="">
     </div>
 
-    <div style="position:absolute; top: 25%; z-index: 11; color: #fff; ">
+    <div style="position:absolute; top: 25%; z-index: 6; color: #fff; ">
         <u style="color: rgba(255, 255, 0, 0.411);"><h2 style="color: #fff; font-size: 50px;">Materias más buscadas</h2></u>
     </div>
 
-<!-- Scroll MateriasPrincipales-->
+    <DIV class="boton" style="top: 34%; position: absolute; z-index: 6; left: 70%;text-decoration: none;">
+        <a href="Materias/Materia.html" ><h4 style="color:#fff;">Ver más</h4></a>
+    </DIV>
+    
+<!-- Scroll Especialidades-->
 
-<div class="container2" style="top: 130%; z-index: 11; " >
+<div class="container2" style="top: 130%; z-index: 6; " >
     <img class="control prev2" src="IMG/prev.png" alt="">
     <div class="slider2" >
         <li><a href=""><center><h1 style="margin-left: 100px;">P<br>R<br> O<br> G <br> R<br> A<br> M<br> A <br> C<br> I<br> Ó <br>N</h1></center></a></li>
@@ -99,16 +133,19 @@ h1{
     <img class="control next2" src="IMG/next.png" alt="">
 </div>
 
-<div style="position:absolute; top: 110%; z-index: 11; ">
+<div style="position:absolute; top: 110%; z-index: 6; ">
     <u style="color: rgba(73, 202, 138, 0.411);"><h2 style="color: rgb(19, 18, 18); font-size: 50px;"> Especialidades</h2></u>
 </div>
 
+<DIV class="boton2" style="top: 124%; position: absolute; z-index: 6; left: 70%;text-decoration: none;">
+    <a href="Materias/Materia.html" ><h4 style="color:#fff;">Ver más</h4></a>
+</DIV>
 
 
 
 
 
-<section class="zona2" style="top: 100%; z-index: 10;"></section>
+<section class="zona2" style="top: 100%; z-index: 1;"></section>
 <script src="java.js"></script>
 </body>
 

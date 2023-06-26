@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
 body{ 
   
     font-family: Arial, Helvetica, sans-serif;
@@ -13,14 +15,14 @@ header {
     display: flex;
     justify-content: space-around;
     transition: 0.7s;       
-    padding: 30px 20px;
+    padding: 30px 15px;
     z-index: 15;
 }
 header.abajo{
     background-color: #fff;
-    padding: 15px 20px;
+    padding: 15px 17px;
 }
-header .logo{
+.logo{
     position: relative;
     font-weight: bold;
     font-size: 2em;
@@ -30,28 +32,29 @@ header .logo{
     transition: 1.5%;
     text-decoration: none;
 }
-nav { 
+.menu nav { 
     display: flex;
     justify-content: center;
-    align-items: center;       
+    align-items: center; 
+       
 }
 
-header ul{ 
+.menu ul{
     position: relative;
     display: flex;
     justify-content: center;       
     align-items: center;
 }
-header ul li{ 
+.menu ul li{ 
     list-style: none;       
 }
-header ul li a{ 
+.menu ul li a{ 
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 15px;
+    margin: 0 5px;
     font-size: 20px;
     text-decoration: none;
-    color: rgb(0, 255, 85);
+    color: rgb(86, 233, 238);
     /*-webkit-text-stroke: 1px black;*/
     letter-spacing: 2px;
     font-weight: 300;
@@ -62,6 +65,7 @@ header ul li a{
     position: absolute;
     width: 100%;
     height: 200%;
+
     background: url(IMG/FondoIndex.jpg);
     background-size: cover;
     background-position: center center;
@@ -82,6 +86,90 @@ header.abajo ul li a{
     color: rgb(0, 0, 0);
     
 } 
+
+/* Buscador de contenido*/
+
+#ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color: #46a2fd;
+}
+
+
+#ctn-bars-search{
+    position: fixed;
+    top: -110px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+    
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+    
+}
+
+#box-search{
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display: block;
+}
+
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+#box-search li a:hover{
+    background: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+}
+
 
 /* scroller MP */
 .container {
@@ -150,7 +238,7 @@ header.abajo ul li a{
     scroll-behavior:smooth;
     overflow: hidden;
     
-    transition: 1.5%;
+    transition: all 600ms;
     
 }
 .container2 .slider2 li{
@@ -196,7 +284,30 @@ header.abajo ul li a{
 
 
 
-
+.boton{
+    background-color: rgba(127, 206, 255, 0.616); 
+    padding: 0px 20px; 
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.boton:hover{
+    background-color: rgba(47, 107, 47, 0.616);
+    
+    color: rgb(127, 206, 255);
+}
+.boton2{
+    background-color: rgba(47, 107, 47, 0.616); 
+    padding: 0px 20px; 
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.boton2:hover{
+    background-color: rgba(127, 206, 255, 0.616);
+    
+    color: rgb(127, 206, 255);
+}
 
 
 /*
