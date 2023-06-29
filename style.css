@@ -13,13 +13,14 @@ header {
     left: 0;
     width: 100%;
     display: flex;
+    background-color: #ada9a9be;
     justify-content: space-around;
     transition: 0.7s;       
     padding: 30px 15px;
     z-index: 15;
 }
 header.abajo{
-    background-color: #fff;
+    background-color: #ffffffb9;
     padding: 20px 15px;
 }
 .logo{
@@ -53,8 +54,9 @@ header.abajo{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 5px;
     font-size: 30px;
+    top: 50%;
     text-decoration: none;
-    color: rgb(86, 233, 238);
+    color: rgb(0, 0, 0);
     /*-webkit-text-stroke: 1px black;*/
     letter-spacing: 2px;
     font-weight: 300;
