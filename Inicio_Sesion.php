@@ -38,7 +38,7 @@
             <h2>Regístrarse</h2>
             <input type="text" placeholder="Nombre completo" name="nombre_competo">
             <input type="text" placeholder="Correo Electronico" name="correo">
-            <input type="text" placeholder="Usuario" name="usuario">
+            <input type="text" placeholder="Usuario" name="usuarios">
             <input type="password" placeholder="Contraseña"name="contrasena">
             <button>Regístrarse</button>
         </form>

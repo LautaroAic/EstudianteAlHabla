@@ -5,14 +5,14 @@
 
     $nombre_completo = $_POST['nombre_competo'];
     $correo = $_POST['correo'];
-    $usuario = $_POST['usuario'];
+    $usuario = $_POST['usuarios'];
     $contrasena = $_POST['contrasena'];
 
-    $query =  "INSERT INTO usuarios(nombre_competo, correo, usuario, contrasena) 
+    $query =  "INSERT INTO usuario(nombre_competo, correo, usuarios, contrasena) 
                 VALUES('$nombre_completo','$correo','$usuario','$contrasena')" ;
 
     //Verificar que no se repita el correo en la Base de datos
-    $verificar_correo = mysqli_query($conexion,"SELECT * FROM usuarios WHERE correo='$correo'");
+    $verificar_correo = mysqli_query($conexion,"SELECT * FROM usuario WHERE correo='$correo'");
     
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '
@@ -25,7 +25,7 @@
     }
     
 //Verificar que no se repita el nombre de usuario en la Base de datos
-$verificar_usuario = mysqli_query($conexion,"SELECT * FROM usuarios WHERE usuario='$usuario'");
+$verificar_usuario = mysqli_query($conexion,"SELECT * FROM usuario WHERE usuarios='$usuario'");
     
 if(mysqli_num_rows($verificar_correo) > 0){
     echo '
@@ -53,6 +53,7 @@ if(mysqli_num_rows($verificar_correo) > 0){
                 window.location = "../Inicio_Sesion.php";
                 </script>
         ';
+        exit();
     }
 
 mysqli_close($conexion);
