@@ -21,8 +21,22 @@
                 window.location = "../Inicio_Sesion.php";
             </script>
         ';
+        exit();
     }
     
+//Verificar que no se repita el nombre de usuario en la Base de datos
+$verificar_usuario = mysqli_query($conexion,"SELECT * FROM usuarios WHERE usuario='$usuario'");
+    
+if(mysqli_num_rows($verificar_correo) > 0){
+    echo '
+        <script>
+            alert("Este usuario  ya esta en uso");
+            window.location = "../Inicio_Sesion.php";
+        </script>
+    ';
+    exit();
+}
+
     $ejecutar = mysqli_query($conexion, $query);
 
     if($ejecutar){
