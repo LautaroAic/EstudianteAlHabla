@@ -21,7 +21,7 @@
             <div class="caja_trasera-register">
                 <h3>¿Aun no tienes cuenta?</h3>
                 <p>Registrate para que puedas iniciar sesion</p>
-                <button id="btn__iniciar-sesion">Registrarse</button>
+                <button id="btn__registrarse">Registrarse</button>
             </div>
         </div>
         <!--Formulario de registro-->
@@ -30,7 +30,7 @@
                 <h2>Iniciar Sesion</h2>
                 <input type="text" placeholder="Correo Electronico">
                 <input type="password" placeholder="Contraseña">
-                <button>entrar</button>
+                <button>Iniciar Sesion</button>
             </form>
             <!--Registro-->
             <form action="" class="formulario__register">
@@ -49,6 +49,6 @@
 
 
 </main>
-
+<script src="assets/javaI.js"></script>
 </body>
 </html>
