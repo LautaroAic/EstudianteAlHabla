@@ -1,0 +1,140 @@
+
+/* scroller MP */
+.container {
+    position: absolute;
+}
+.container .slider {
+    display: flex;
+    background: #97979717;
+    padding: 10px;
+    width: 1000px;
+    height: 440px;
+    overflow: hidden;
+    transition: 1.5%;
+    
+}
+.container .slider li{
+    list-style: none;
+    
+}
+.container .slider img {
+    margin: 3px;
+    height: 45vh;
+
+    
+    
+}
+.container .slider li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.container .control {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #000000;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 10px;
+    border-color: #fff;
+}
+
+.container .prev {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.container .next {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);   
+}
+/* scroller ME */
+.container2 {
+    position: absolute;
+}
+.container2 .slider2 {
+    display: flex;
+    background: #979797b6;
+    padding: 22px;
+    width: 1000px;
+    height: 440px;
+    scroll-behavior:smooth;
+    overflow: hidden;
+    
+    transition: all 600ms;
+    
+}
+.container2 .slider2 li{
+    list-style: none;
+    
+}
+.container2 .slider2 img {
+    margin: 3px;
+    height: 45vh;
+
+    
+    
+}
+.container2 .slider2 li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.container2 .control {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #000000;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 10px;
+    border-color: #fff;
+}
+
+.container2 .prev2 {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.container2 .next2 {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);   
+}
+
+
+
+.boton{
+    background-color: rgba(127, 206, 255, 0.616); 
+    padding: 0px 20px; 
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.boton:hover{
+    background-color: rgba(47, 107, 47, 0.616);
+    
+    color: rgb(127, 206, 255);
+}
+.boton2{
+    background-color: rgba(47, 107, 47, 0.616); 
+    padding: 0px 20px; 
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.boton2:hover{
+    background-color: rgba(127, 206, 255, 0.616);
+    
+    color: rgb(127, 206, 255);
+}
+
+
