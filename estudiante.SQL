@@ -1,13 +1,13 @@
 DROP DATABASE IF EXISTS Estudiante;
 CREATE database Estudiante;
 use Estudiante;
-create table ESTUDIANTE(
-DNI INT (10),
-Nombre VARCHAR (20),
-Mail TEXT (50),
-Fecha_nac DATE,
-Edad INT (3),
-PRIMARY KEY (DNI));
+create table usuarios(
+id INT AUTO_INCREMENT,
+nombre_usuario VARCHAR (20),
+correo VARCHAR (50),
+usuario VARCHAR (50),
+contrasena VARCHAR (50),
+PRIMARY KEY (id));
 
 create table CURSO(
 ID_Pizarrón INT (3),
@@ -34,12 +34,12 @@ FOREIGN KEY (ID_materia)
 REFERENCES MATERIA (ID_materia));
 
 
-INSERT INTO ESTUDIANTE (DNI, Nombre, Mail, Fecha_nac, Edad)
-VALUES (23323490, "Juan", "Alberto@gmail.com", "2003-03-12", 20),
-	(29453998, "Sara", "Abaro@gmail.com", "2005-07-05", 18),
-    (12384829, "Renata", "Alberiño@gmail.com", "1989-04-23", 34),
-    (19344233, "Estanislao", "Alvaro@gmail.com", "1998-02-28", 25),
-    (32849388, "Edson", "Albere@gmail.com", "2004-04-30", 18);
+INSERT INTO ESTUDIANTE (id, nombre_usuario, correo, usuario, contrasena)
+VALUES (1, "Juan", "Alberto@gmail.com", "Juanito", "messi"),
+	(2, "Sara", "Abaro@gmail.com", "Sara_A", "messigood"),
+    (3, "Renata", "Alberiño@gmail.com", "RenataR", "messirve"),
+    (4, "Estanislao", "Alvaro@gmail.com", "Estan", "messiento"),
+    (5, "Edson", "Albere@gmail.com", "nosdE", "messiientobien");
 
 INSERT INTO CURSO (ID_Pizarrón, Mesas, Sillas, Puertas, Alumnos)
 VALUES (1,  10, 100, 4, 100),
