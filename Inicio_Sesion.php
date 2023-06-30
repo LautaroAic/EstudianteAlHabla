@@ -7,48 +7,46 @@
     <link rel="stylesheet" href="assets/styleI.css">
 </head>
 <body>
-    
 <main>
 
-    <div class="contenedor__todo">
-
-        <div class="caja__trasera">
-            <div class="caja_trasera-login">
-                <h3>¿Ya tienes una cuenta?</h3>
-                <p>Inicia sesion para entrar en la pagina</p>
-                <button id="btn__iniciar-sesion">Iniciar Sesion</button>
-            </div>
-            <div class="caja_trasera-register">
-                <h3>¿Aun no tienes cuenta?</h3>
-                <p>Registrate para que puedas iniciar sesion</p>
-                <button id="btn__registrarse">Registrarse</button>
-            </div>
+<div class="contenedor__todo">
+    <div class="caja__trasera">
+        <div class="caja__trasera-login">
+            <h3>¿Ya tienes una cuenta?</h3>
+            <p>Inicia sesión para entrar en la página</p>
+            <button id="btn__iniciar-sesion">Iniciar Sesión</button>
         </div>
-        <!--Formulario de registro-->
-        <div class="contenedor__login-register">
-            <form action="" class="formularo__login">
-                <h2>Iniciar Sesion</h2>
-                <input type="text" placeholder="Correo Electronico">
-                <input type="password" placeholder="Contraseña">
-                <button>Iniciar Sesion</button>
-            </form>
-            <!--Registro-->
-            <form action="" class="formulario__register">
-                <h2>Registrarse</h2>
-                <input type="text" placeholder="Nombre Completo">
-                <input type="text" placeholder="Correo Electronico">
-                <input type="text" placeholder="usuario">
-                <input type="password" placeholder="Contraseña">
-                <button>Registrarse</button>
-            </form>
-
+        <div class="caja__trasera-register">
+            <h3>¿Aún no tienes una cuenta?</h3>
+            <p>Regístrate para que puedas iniciar sesión</p>
+            <button id="btn__registrarse">Regístrarse</button>
         </div>
-
     </div>
 
+    <!--Formulario de Login y registro-->
+    <div class="contenedor__login-register">
+        <!--Login-->
+        <form action="" class="formulario__login">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="Correo Electronico">
+            <input type="password" placeholder="Contraseña">
+            <button>Entrar</button>
+        </form>
 
+        <!--Register-->
+        <form action="php/registro_usuario_be.php" method="POST"class="formulario__register">
+            <h2>Regístrarse</h2>
+            <input type="text" placeholder="Nombre completo" name="nombre_competo">
+            <input type="text" placeholder="Correo Electronico" name="correo">
+            <input type="text" placeholder="Usuario" name="usuario">
+            <input type="password" placeholder="Contraseña"name="contrasena">
+            <button>Regístrarse</button>
+        </form>
+    </div>
+</div>
 
 </main>
+
 <script src="assets/javaI.js"></script>
 </body>
 </html>
