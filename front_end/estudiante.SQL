@@ -1,11 +1,11 @@
 DROP DATABASE IF EXISTS Estudiante;
 CREATE database Estudiante;
 use Estudiante;
-create table usuarios(
+create table usuario(
 id INT AUTO_INCREMENT,
 nombre_usuario VARCHAR (20),
 correo VARCHAR (50),
-usuario VARCHAR (50),
+usuarios VARCHAR (50),
 contrasena VARCHAR (50),
 PRIMARY KEY (id));
 

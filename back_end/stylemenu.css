@@ -12,14 +12,14 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    background-color: #ada9a9be;
+    background-color: #757373be;
     justify-content: space-around;
     transition: 0.7s;       
     padding: 30px 15px;
     z-index: 15;
 }
 header.abajo{
-    background-color: #ffffffb9;
+    background-color: #ffffffa8;
     padding: 30px 15px;
 }
 .logo{

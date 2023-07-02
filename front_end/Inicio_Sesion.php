@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login y Registro</title>
-    <link rel="stylesheet" href="assets/styleI.css">
+    <link rel="stylesheet" href="../back_end/assets/styleI.css">
 </head>
 <body>
 <main>
@@ -38,7 +38,7 @@
             <h2>Regístrarse</h2>
             <input type="text" placeholder="Nombre completo" name="nombre_competo">
             <input type="text" placeholder="Correo Electronico" name="correo">
-            <input type="text" placeholder="Usuario" name="usuarios">
+            <input type="text" placeholder="Usuario" name="usuario">
             <input type="password" placeholder="Contraseña"name="contrasena">
             <button>Regístrarse</button>
         </form>
@@ -47,6 +47,6 @@
 
 </main>
 
-<script src="assets/javaI.js"></script>
+<script src="../back_end/assets/javaI.js"></script>
 </body>
 </html>

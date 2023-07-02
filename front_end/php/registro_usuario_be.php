@@ -5,10 +5,10 @@
 
     $nombre_completo = $_POST['nombre_competo'];
     $correo = $_POST['correo'];
-    $usuario = $_POST['usuarios'];
+    $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
 
-    $query =  "INSERT INTO usuario(nombre_competo, correo, usuarios, contrasena) 
+    $query =  "INSERT INTO usuario(nombre_completo, correo, usuarios, contrasena) 
                 VALUES('$nombre_completo','$correo','$usuario','$contrasena')" ;
 
     //Verificar que no se repita el correo en la Base de datos
@@ -27,7 +27,7 @@
 //Verificar que no se repita el nombre de usuario en la Base de datos
 $verificar_usuario = mysqli_query($conexion,"SELECT * FROM usuario WHERE usuarios='$usuario'");
     
-if(mysqli_num_rows($verificar_correo) > 0){
+if(mysqli_num_rows($verificar_usuario) > 0){
     echo '
         <script>
             alert("Este usuario  ya esta en uso");
@@ -37,13 +37,14 @@ if(mysqli_num_rows($verificar_correo) > 0){
     exit();
 }
 
-    $ejecutar = mysqli_query($conexion, $query);
 
+    $ejecutar = mysqli_query($conexion, $query);
+  
     if($ejecutar){
         echo '
             <script>
                 alert("usuario registrado exitosamente");
-                window.location = "../Inicio_Sesion.php";
+                window.location = "../index.html";
                 </script>
         ';
     }else{
