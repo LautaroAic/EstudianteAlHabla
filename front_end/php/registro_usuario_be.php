@@ -8,11 +8,11 @@
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
 
-    $query =  "INSERT INTO usuarios(nombre_competo, correo, usuario, contrasena) 
+    $query =  "INSERT INTO usuario(nombre_completo, correo, usuarios, contrasena) 
                 VALUES('$nombre_completo','$correo','$usuario','$contrasena')" ;
 
     //Verificar que no se repita el correo en la Base de datos
-    $verificar_correo = mysqli_query($conexion,"SELECT * FROM usuarios WHERE correo='$correo'");
+    $verificar_correo = mysqli_query($conexion,"SELECT * FROM usuario WHERE correo='$correo'");
     
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '
@@ -21,15 +21,30 @@
                 window.location = "../Inicio_Sesion.php";
             </script>
         ';
+        exit();
     }
     
-    $ejecutar = mysqli_query($conexion, $query);
+//Verificar que no se repita el nombre de usuario en la Base de datos
+$verificar_usuario = mysqli_query($conexion,"SELECT * FROM usuario WHERE usuarios='$usuario'");
+    
+if(mysqli_num_rows($verificar_usuario) > 0){
+    echo '
+        <script>
+            alert("Este usuario  ya esta en uso");
+            window.location = "../Inicio_Sesion.php";
+        </script>
+    ';
+    exit();
+}
 
+
+    $ejecutar = mysqli_query($conexion, $query);
+  
     if($ejecutar){
         echo '
             <script>
                 alert("usuario registrado exitosamente");
-                window.location = "../Inicio_Sesion.php";
+                window.location = "../index.html";
                 </script>
         ';
     }else{
@@ -39,6 +54,7 @@
                 window.location = "../Inicio_Sesion.php";
                 </script>
         ';
+        exit();
     }
 
 mysqli_close($conexion);
